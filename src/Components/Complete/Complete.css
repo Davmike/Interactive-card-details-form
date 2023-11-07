@@ -1,0 +1,41 @@
+.thankYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+.iconComplete {
+  margin-top: 9.1rem;
+}
+
+.thankYouText {
+  color: var(--Deep-Violet, #21092f);
+  text-align: center;
+  font-family: Space Grotesk;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3.422px;
+  margin-top: 3.5rem;
+}
+
+.thankYouParagraph {
+  color: var(--Purplish-Grey, #8f8694);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 1.6rem;
+}
+
+.continue {
+  width: 327px;
+  height: 53px;
+  border-radius: 8px;
+  background: var(--Deep-Violet, #21092f);
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 4.8rem;
+  border: none;
+}

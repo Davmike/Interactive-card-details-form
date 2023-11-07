@@ -1,0 +1,152 @@
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 9.1rem;
+  /* display: none; */
+}
+
+#card-name,
+#card-number,
+#card-month,
+#cvcLabel {
+  color: var(--Deep-Violet, #21092f);
+  /* Body (M) */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cardHolderName,
+.cardHolderNumber,
+.cardHolderMonth,
+.cardHolderCvc {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.card-name-input,
+.card-number-input {
+  width: 327px;
+  height: 45px;
+  border-radius: 8px;
+  border: 2px solid var(--Light-Grey, #dfdee0);
+  background: var(--White, #fff);
+}
+
+.card-name-input::placeholder,
+.card-number-input::placeholder,
+.card-mm-input::placeholder,
+.card-yy-input::placeholder,
+.cvc-input::placeholder {
+  color: var(--Deep-Violet, #21092f);
+  /* Heading (L) */
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.25;
+}
+
+.cardHolderNumber {
+  margin-top: 2rem;
+}
+
+.card-mm-input,
+.card-yy-input {
+  width: 72px;
+  height: 45px;
+  border-radius: 8px;
+  border: 2px solid var(--Light-Grey, #dfdee0);
+  background: var(--White, #fff);
+}
+
+.cardHolderMonth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.cvc-input {
+  width: 164px;
+  height: 45px;
+  border-radius: 8px;
+  border: 2px solid var(--Light-Grey, #dfdee0);
+  background: var(--White, #fff);
+}
+
+.lastDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 1.1rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+#button {
+  width: 327px;
+  height: 53px;
+  border-radius: 8px;
+  background: var(--Deep-Violet, #21092f);
+  border: none;
+  margin-top: 2.8rem;
+  /* text */
+  color: var(--White, #fff);
+  /* Heading (L) */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* complete section */
+
+.error,
+.errorData {
+  color: var(--Red, #ff5050);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.errorData {
+  position: absolute;
+  top: 85%;
+  left: 1%;
+}
+
+input {
+  padding-left: 1.6rem;
+  outline: none;
+}
+
+input:hover {
+  border-radius: 8px;
+  border: 1px solid var(--Gradient, #6348fe);
+  background: var(--White, #fff);
+}
+
+.numberInputError {
+  border-radius: 8px;
+  outline: 1px solid var(--Red, #ff5050);
+  background: var(--White, #fff);
+}
+
+@media screen and (min-width: 1440px) {
+  .formDiv {
+    position: absolute;
+    top: 20%;
+    left: 52%;
+    /* display: none; */
+  }
+
+  .thankYou {
+    /* display: flex; */
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 52%;
+  }
+}

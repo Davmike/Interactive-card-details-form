@@ -1,0 +1,121 @@
+.card-container {
+  position: relative;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  background: #21092f;
+}
+
+.backDiv,
+.frontDiv {
+  position: absolute;
+  height: 156px;
+  width: 285px;
+}
+
+.backDiv {
+  margin-top: 4.2rem;
+  margin-left: 6.5rem;
+}
+
+.frontDiv {
+  margin-top: 12.8rem;
+  margin-right: 4.3rem;
+}
+
+.BackCardImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.FrontCardImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.backText {
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  color: var(--White, #fff);
+  text-align: right;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+}
+
+.circle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.cardNumber {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+}
+
+.cardName {
+  position: absolute;
+  color: var(--White, #fff);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+}
+
+.cardDate {
+  position: absolute;
+  color: var(--White, #fff);
+  text-align: right;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+}
+
+.NameDate {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cardName {
+  order: 1;
+}
+
+.cardDate {
+  order: 2;
+  margin-left: 205px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card-container {
+    background: none;
+    background-image: url(/public/assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    height: 900px;
+    align-items: center;
+  }
+
+  .backDiv {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+  }
+
+  .frontDiv {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+  }
+}
